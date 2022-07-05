@@ -1,6 +1,7 @@
 JavaScript+++++++++++++++++
 
-JavaScript accepts both double and single quotes:
+JavaScript accepts both double and single quotes
+
 Image is an tag src is attribute
 Css things will come with .style
 In HTML, JavaScript code is inserted between <script> and </script> tags.
@@ -11,4 +12,19 @@ External javascript+
 <script src="myScript.js"></script>
 You can place an external script reference in <head> or <body> as you like.
 
+
+Using document.write() after an HTML document is loaded, will delete all existing HTML.The document.write() method should only be used for testing.
+
+Fixed values are called Literals.
+Variable values are called Variables.
+
+The let keyword tells the browser to create variables.
+
+4 Ways to Declare a JavaScript Variable:
+Using var 
+Using let = can change the values(variables declared by using let cannot be redeclared)
+Using const = Cannot change the value
+Using nothing
+
+All JavaScript variables must be identified with unique names. These unique names are called identifiers.
 
