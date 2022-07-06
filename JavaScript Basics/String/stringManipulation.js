@@ -34,3 +34,16 @@ let str1 = "Day 2nd of learning JavaScript";
         function charat(){
             document.getElementById('demo').innerHTML = str1.charAt(0);
         }
+
+        function arrayconversion(){
+            const mn = str1.split(" ");
+            document.getElementById('demo').innerHTML = mn;
+        }
+
+        function templiterals(){
+            let firstname = "Kabir";
+            let lastname = "Pal";
+
+            let name = `Welcome ${firstname} ${lastname}`;
+            document.getElementById('demo').innerHTML = name;
+        }
