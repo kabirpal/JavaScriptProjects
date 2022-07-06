@@ -28,3 +28,11 @@ Using nothing
 
 All JavaScript variables must be identified with unique names. These unique names are called identifiers.
 
+Reassigning an existing const variable, in the same scope, is not allowed.
+
+python dic are known as Object in JS
+A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.
+
+HTML events are "things" that happen to HTML elements. An HTML event can be something the browser does, or something a user does.
+
+Event handlers can be used to handle and verify user input, user actions, and browser actions
