@@ -26,13 +26,169 @@ Using let = can change the values(variables declared by using let cannot be rede
 Using const = Cannot change the value
 Using nothing
 
+Variables defined with let cannot be Redeclared.
+Variables defined with let must be Declared before use.
+Variables defined with let have Block Scope.
+
+It does not define a constant value. It defines a constant reference to a value.
+Because of this you can NOT:
+Reassign a constant value
+Reassign a constant array
+Reassign a constant object
+
+But you CAN:
+Change the elements of constant array
+Change the properties of constant object
+
+
 All JavaScript variables must be identified with unique names. These unique names are called identifiers.
 
 Reassigning an existing const variable, in the same scope, is not allowed.
 
-python dic are known as Object in JS
+In python we have dic in JS we have Objects.
 A javaScript object is an entity having state and behavior (properties and method). For example: car, pen, bike, chair, glass, keyboard, monitor etc.
 
 HTML events are "things" that happen to HTML elements. An HTML event can be something the browser does, or something a user does.
 
-Event handlers can be used to handle and verify user input, user actions, and browser actions
+Event handlers can be used to handle and verify user input, user actions, and browser actions.
+
+
+~~~~~~~~~~~~~~~~~~~~Day 2~~~~~~~~~~~~~~~~~~~
+
+String methods help you to work with strings.
+
+All string methods return a new string. They don't modify the original string.
+Formally said:
+Strings are immutable: Strings cannot be changed, only replaced.
+
+
+The padStart() method pads a string with another string. 
+let text = "5";
+let padded = text.padStart(4,"x");
+output=xxx4
+
+To pad a number, convert the number to a string first.
+
+indexOf() and lastIndexOf() is used to locate the index of a word. Both methods accept a second parameter as the starting position for the search.   str.indexOf("locate", 15);
+
+The search() method cannot take a second start position argument.
+The indexOf() method cannot take powerful search values (regular expressions).
+
+To search for a substring in a string-----
+---let text = "The rain in SPAIN stays mainly in the plain";
+---text.match(/ain/g);
+
+---text.match(/ain/gi);
+===Here "g" will search globally and "i" is used for case insensitivity
+
+Note--- If a regular expression does not include the g modifier (to perform a global search), the match() method will return only the first match in the string.
+
+startsWith() and endsWith() method is case sensitive
+
+Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, for string interpolation with embedded expressions, and for special constructs called tagged templates.
+Template literals allow variables in strings:
+let firstName = "John";
+let lastName = "Doe";
+
+let text = `Welcome ${firstName}, ${lastName}!`;
+
+The maximum number of decimals is 17.
+
+Integers (numbers without a period or exponent notation) are accurate up to 15 digits.
+
+JavaScript will try to convert strings to numbers in all numeric operations
+example - "100"/"10" will give 10
+"100"-"10" will give 90
+"100"+"10" will give "10010"
+100/"10" will give 10 because "10" will be converted to 10
+
+
+Never write a number with a leading zero (like 07).
+Some JavaScript versions interpret numbers as octal if they are written with a leading zero.
+
+toExponential() returns a string, with a number rounded and written using exponential notation.
+
+
+
+toFixed() returns a string, with the number written with a specified number of decimals:
+
+Example
+let x = 9.656;
+x.toFixed(0); //10
+x.toFixed(2); //9.66
+x.toFixed(4); //9.6560
+x.toFixed(6); //9.656000
+
+
+
+There are 3 JavaScript methods that can be used to convert variables to numbers:
+The Number() method
+The parseInt() method
+The parseFloat() method
+
+NaN = Not a Number
+
+Using myNumber.MAX_VALUE, where myNumber is a variable, expression, or value, will return undefined:
+eg= let x = 6;
+    x.MAX_VALUE
+output= undefined
+
+
+An array is a special variable, which can hold more than one value:
+
+const cars = ["Saab", "Volvo", "BMW"];
+
+You can have objects in an Array. You can have functions in an Array. You can have arrays in an Array.
+
+
+The concat() method does not change the existing arrays. It always returns a new array.
+
+The slice() method creates a new array.
+
+The slice() method does not remove any elements from the source array.
+
+__________________________________Day 3_______________________________________
+
+Javascript is synchronus, single threaded language
+
+Execution context
+divided in two parts
+memory--Variable environment
+code -- thread of execution
+return keyword tells the program to return the whole control back to the execution context where the function was invoked.
+
+2 phases created in global execution context--
+memory--Variable environment
+code -- thread of execution
+
+Call stack maintains the order of execution of execution context
+
+Call stack is also known as Execution context stack, Program stack, Machine stack, runtime Stack and Control Stack.
+Hoisting is a phenomenan in JS by which you can access these variables and function in JS even before you initilize it.
+
+Window is a global object that is created along with the Global execution context.
+Whenever a JS program is run Global object is created, Global Execution context and this variable is created(for browser it is known as WINDOW) i.e. this === window.
+
+Lexical memory is local memory along with lexical environement of its parent
+Lexical means in order ir hierarchy.
+when there is no parent available, it refers to null.
+
+Anonymous in call stack is known as global EC.
+
+The time period between the let variable is hoisted and it is intialized is known as Temporal Dead Zone.
+
+Referance Error is when JS tries to find out the a specific variable inside the memory space and it cannot access it. Example calling a let/const variable, even before initilaizing it.
+
+When variable is not present in a local memory it is known as referance error.
+
+Block is also known as compound statement.
+Example-
+var a=10;	//Here the variable is 10
+{
+var a = 100;	//Here it is again redeclared
+var b = 15;	
+console.log(a);	//Output = 100
+}
+console.log(a);	//Output = 100 not 10 because the it has been changed to 100. If it was let/const instead of var then the output would have been 10 as let have scope in block only.
+
+ 
