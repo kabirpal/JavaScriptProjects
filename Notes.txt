@@ -192,3 +192,69 @@ console.log(a);	//Output = 100
 console.log(a);	//Output = 100 not 10 because the it has been changed to 100. If it was let/const instead of var then the output would have been 10 as let have scope in block only.
 
  
+---------------------------------------------------------------Day 4---------------------------------------------------------------------
+
+var									let							const
+The scope of a var variable is functional scope.	The scope of a let variable is block scope.			The scope of a const variable is block scope.
+It can be updated and re-declared into the scope.	It can be updated but cannot be re-declared into the scope.	It cannot be updated or re-declared into the scope.
+It can be declared without initialization.		It can be declared without initialization.			It cannot be declared without initialization.
+
+Var can be accessed without initialization as its default value is “undefined”.	
+Let cannot be accessed without initialization, as it returns an error.	
+Const cannot be accessed without initialization, as it cannot be declared without initialization.
+
+JavaScript has a runtime model based on an event loop, which is responsible for executing the code, collecting and processing events, and executing queued sub-tasks.
+
+Starvation happens when “greedy” threads make shared resources unavailable for long periods. For instance, suppose an object provides a synchronized method that often takes a long time to return.
+
+What is starvation and deadlock?
+Starvation occurs when one or more threads in your program are blocked from gaining access to a resource and, as a result, cannot make progress. Deadlock, the ultimate form of starvation, occurs when two or more threads are waiting on a condition that cannot be satisfied.
+
+Promises and Mutation Observer are go in Micro Task Queue.
+Everything else go inside the callback queue also known as Task Queue. For eg. - set Timeout(), DOM APIs
+
+Array Iterations
+1) forEach()
+2) map()
+3) filter()
+4) reduce()
+5) every()
+
+Function along with it's laxical scope bundled together is known as Closures.
+
+Date objects are static. The computer time is ticking, but date objects are not.
+_______________Cookies_____________
+Cookies are data, stored in small text files, on your computer.
+
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~JS Async~~~~~~~~~~~~~~~~~~~~~~~~
+
+A callback is a function passed as an argument to another function
+
+This technique allows a function to call another function
+
+A callback function can run after another function has finished.
+
+When you pass a function as an argument, remember not to use parenthesis.
+
+Right: setTimeout(myFunction, 3000);
+Wrong: setTimeout(myFunction(), 3000);
+
+"Producing code" is code that can take some time
+
+"Consuming code" is code that must wait for the result
+
+A Promise is a JavaScript object that links producing code and consuming code.
+
+You cannot access the Promise properties state and result.
+
+You must use a Promise method to handle promises.
+
+async makes a function return a Promise
+
+await makes a function wait for a Promise
+
+Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. 
+
+ The HTML DOM is a standard for how to get, change, add, or delete HTML elements.

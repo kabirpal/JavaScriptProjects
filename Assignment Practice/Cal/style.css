@@ -1,0 +1,37 @@
+body{
+    background-color: #dedbda;
+}
+
+h1{
+    color: burlywood;
+    font-size: 70px;
+}
+.container{
+    text-align: center;
+}
+
+.calbutton{
+    margin: auto;
+}
+
+input{
+    font-size: 30px;
+    border-radius: 15px;
+    margin: 5px;
+    height: 60px;
+}
+
+button{
+    font-size: 30px;
+    width: 90px;
+    height: 70px;
+    background-color: goldenrod;
+    border-radius: 100px;
+}
+
+.cal{
+    display: inline-block;
+    border: 5px solid black;
+    background-color: #7c6174;
+    border-radius: 15px;
+}

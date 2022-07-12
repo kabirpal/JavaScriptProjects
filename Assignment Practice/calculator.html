@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width='device-width', initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculator</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>CALCULATOR</h1>
+            <div class="cal">
+                <form name="display_form">  
+                    <input id="display_2" name="display_main" type="text" value="" />  
+                    <input id="display" name="display_m" type="text" value="0" />  
+                </form> 
+            <table>
+                <tr>
+                    <td><button id="o_pt">(</button></td>
+                    <td><button id="c_pt">)</button></td>
+                    <td><button id="cancel">C</button></td>
+                    <td><button id="equals">=</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num7" onclick="numseven();">7</button></td>
+                    <td><button id="num8" onclick="numeight();">8</button></td>
+                    <td><button id="num9" onclick="numnine();">9</button></td>
+                    <td><button id="operationplus" onclick="operationplus();">+</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num4" onclick="numfour();">4</button></td>
+                    <td><button id="num5" onclick="numfive();">5</button></td>
+                    <td><button id="num6" onclick="numsix();">6</button></td>
+                    <td><button id="operationminus" onclick="operationminus();">-</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num1" onclick="numone();">1</button></td>
+                    <td><button id="num2" onclick="numtwo();">2</button></td>
+                    <td><button id="num3" onclick="numthree();">3</button></td>
+                    <td><button id="operationmult" onclick="operationmult();">*</button></td>
+                </tr>
+                <tr>
+                    <td><button id="num00" onclick="numdobuzero();">00</button></td>
+                    <td><button id="num0" onclick="numzero();">0</button></td>
+                    <td><button id="operationperc" onclick="operationperc();">%</button></td>
+                    <td><button id="operationdivid" onclick="operationdivid();">/</button></td>
+                </tr>
+            </table>
+        </div>
+        </div>
+        <script src = "cal_logic.js"></script>
+    </body>
+</html>

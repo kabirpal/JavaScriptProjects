@@ -1,0 +1,60 @@
+<!doctype html>  
+<html>  
+    <head>  
+        <title>Calculator</title>   
+        <link rel="stylesheet" href="style.css"> 
+    </head>  
+    <body>    
+        <div class="container">  
+            <h1>Calculator</h1>
+            <div class="cal">
+            <form name="display_form">  
+                <input id="display_2" name="display_main" type="text" value="" />  
+                <br>
+                <input id="display" name="display_m" type="text" value="0" />  
+            </form>  
+            <div id="calbutton">
+                <table> 
+                    <tr>
+                        <td><button id="clr" onclick="clr();">C</button></td>
+                        <td><button id="operationsqrt" onclick="sqrots();">Sqrt()</button></td>
+                        <td><button id="operationraistop" onclick="operationraistop();">^</button></td>
+                        <td><button id="operationdivid" onclick="operationdivid();">/</button></td>
+                    </tr>
+
+                    <tr>
+                        <td><button id="num7" onclick="numseven();">7</button></td>
+                        <td><button id="num8" onclick="numeight();">8</button></td>
+                        <td><button id="num9" onclick="numnine();">9</button></td>
+                        <td><button id="operationmult" onclick="operationmult();">*</button></td>
+                    </tr>
+                    
+                    <tr>
+                        <td><button id="num4" onclick="numfour();">4</button></td>
+                        <td><button id="num5" onclick="numfive();">5</button></td>
+                        <td><button id="num6" onclick="numsix();">6</button></td>
+                        <td><button id="operationminus" onclick="operationminus();">-</button></td>
+
+                    </tr>
+                    
+                    <tr>
+                        <td><button id="num1" onclick="numone();">1</button></td>  
+                        <td><button id="num2" onclick="numtwo();">2</button></td>
+                        <td><button id="num3" onclick="numthree();">3</button></td>
+                        <td><button id="operationplus" onclick="operationplus();">+</button></td> 
+                    </tr>
+                    <tr>
+                        <td><button id="num0" onclick="numzero();">0</button></td>
+                        <td><button id="num00" onclick="numdobuzero();">00</button></td> 
+                        <td><button id="operationperc" onclick="operationperc();">%</button></td>  
+                        <td><button id="sumbit" onclick="equalsto();">=</button></td>
+                    </tr>
+                </table>
+            </div>  
+        </div>  
+    </body>  
+    <footer>
+        <script src="index.js"></script>
+    </footer>
+  
+</html>
