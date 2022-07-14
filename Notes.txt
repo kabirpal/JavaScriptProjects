@@ -258,3 +258,12 @@ await makes a function wait for a Promise
 Promises are used to handle asynchronous operations in JavaScript. They are easy to manage when dealing with multiple asynchronous operations where callbacks can create callback hell leading to unmanageable code. 
 
  The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+
+DOMContentLoaded is used to tell the js that first load all the html documents then only do the following.
+eg = document.addEventLister("DOMContentLoaded"()=>{
+});
+
+
+Topics to cover today by EOD
+class 
+forEach

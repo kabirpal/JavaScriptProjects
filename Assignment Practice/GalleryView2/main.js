@@ -42,7 +42,7 @@ request.send();
 request.addEventListener('load',function(){
     //console.log(this.responseText)
     const data = JSON.parse(this.responseText);
-    //console.log(data.image1);
+    console.log(data.image1);
     const htmlData =`
     <div class="main">
     <img src="${data.image1}" class="slide" alt="image">

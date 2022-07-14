@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-.main{
+.container{
     width:70%;
     height: 500px;
     box-shadow: 0px 0px 10px gray;
@@ -24,8 +24,4 @@
 
 .nav{
     text-align: center;
-}
-
-h1{
-    text-align: center ;
 }

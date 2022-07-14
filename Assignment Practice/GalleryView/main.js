@@ -20,6 +20,7 @@ const goPrev = () =>{
     if (counter<0){
         counter = 4
     }
+    
     slideImage()
 }
 
